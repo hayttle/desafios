@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": "01",
+      "folder": "profile-component",
+      "title": "Profile component",
+      "technology": ["html", "css"],
+      "responsive": false,
+      "status": "enabled"
+    }
+  ]
+}
