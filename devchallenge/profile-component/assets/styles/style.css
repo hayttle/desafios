@@ -88,7 +88,6 @@ main {
   padding: 32px;
   justify-content: space-between;
   width: 95%;
-
 }
 
 .card {
@@ -98,12 +97,12 @@ main {
   border-radius: 8px;
   width: 30%;
 }
-.card h2{
+.card h2 {
   font-size: 1.9rem;
   font-weight: 500;
 }
 
-.card span{
+.card span {
   font-size: 4.8rem;
   font-weight: 500;
 }
@@ -118,4 +117,45 @@ main {
 
 .followers {
   background-color: var(--yellow);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100vw;
+    min-width: 375px;
+  }
+  header {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile{
+    flex-direction: column;
+    text-align: center;
+  }
+  .info h1 {
+    font-size: 2.4rem;
+  }
+  .info span {
+    font-size: 2rem;
+  }
+  
+  button {
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+  main {
+    width: 100vw;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .card {
+    width: 100%;
+  }
 }

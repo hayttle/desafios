@@ -5,7 +5,7 @@
       "folder": "profile-component",
       "title": "Profile component",
       "technology": ["html", "css"],
-      "responsive": false,
+      "responsive": true,
       "status": "enabled"
     }
   ]
