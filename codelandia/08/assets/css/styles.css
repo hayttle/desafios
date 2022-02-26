@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sen:wght@400;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --purple: #6610f2;
+  --white: #f9f9f9;
+  --white-200: #eaeaea;
+  --gray: #2f2f2f;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  margin-top: 42px;
+  color: var(--gray);
+}
+
+.container {
+  width: 60%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 80px;
+}
+
+header .logo {
+  font-family: Sen, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+header .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border: 2px solid var(--white-200);
+  cursor: pointer;
+}
+
+header .search img {
+  width: 25px;
+  height: 25px;
+}
+
+header .signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 183px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 5px;
+  border: 2px solid var(--white-200);
+}
+
+header .search:hover {
+  background-color: var(--white-200);
+}
+
+header .signin:hover {
+  background-color: var(--white-200);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 83px;
+}
+
+main .content {
+  width: 100%;
+  height: 720px;
+  text-align: center;
+  position: relative;
+}
+
+main img {
+  width: 150px;
+  height: 150px;
+}
+
+main .memoji,
+.img {
+  position: absolute;
+}
+
+main .img01 {
+  left: 0px;
+  top: 25px;
+}
+
+main .img02 {
+  right: 25px;
+  top: 25px;
+}
+
+main .img03 {
+  left: 100px;
+  bottom: 95px;
+}
+
+main .img04 {
+  right: 400px;
+  bottom: 10px;
+}
+
+main .img05 {
+  right: -35px;
+  bottom: 205px;
+}
+
+main .rhombus {
+  /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: rotate(45deg);
+  background: linear-gradient(
+    136.92deg,
+    #2dc7ed 3.14%,
+    rgba(45, 199, 237, 0) 100%
+  );
+  width: 200px;
+  height: 200px;
+  left: -25px;
+  top: 0;
+}
+
+main .circle1 {
+  clip-path: circle(50% at 50% 50%);
+  background: linear-gradient(270deg, #f2c94c 0%, rgba(242, 201, 76, 0) 100%);
+  width: 200px;
+  height: 200px;
+  right: 0;
+  top: 0;
+}
+
+main .square {
+  clip-path: inset(0 round 15%);
+  background: linear-gradient(
+    136.92deg,
+    #ef7c89 3.14%,
+    rgba(239, 124, 137, 0) 100%
+  );
+  width: 200px;
+  height: 200px;
+  left: 80px;
+  bottom: 70px;
+}
+
+main .circle2 {
+  clip-path: circle(50% at 50% 50%);
+  background: linear-gradient(270deg, #7248ec 0%, rgba(114, 72, 236, 0) 100%);
+  width: 200px;
+  height: 200px;
+  right: 375px;
+  bottom: -15px;
+}
+
+main .triangle {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  background: linear-gradient(180deg, #00e861 0%, rgba(0, 232, 97, 0) 100%);
+  width: 200px;
+  height: 200px;
+  right: -60px;
+  bottom: 180px;
+}
+
+main h2 {
+  font-family: Inter, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+main p {
+  font-family: Sen, sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 70px;
+}
+
+main .btn {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+main button {
+  font-family: Inter, sans-serif;
+  font-size: 1.25rem;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--white-200);
+  cursor: pointer;
+  height: 54px;
+}
+
+main button:hover {
+  background-color: var(--white-200);
+  color: var(--gray);
+}
+
+main .add-memoji {
+  background-color: var(--purple);
+  color: var(--white);
+  border: 2px solid var(--white-200);
+}
+
+main .library {
+  background-color: #ffffff;
+  border: 2px solid var(--white-200);
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  padding: 62px;
+  gap: 100px;
+  background-color: #FCFCFC;
+}
+
+section div span {
+  font-family: Sen, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 12px;
+  border-left: 3px solid var(--purple);
+}
+
+section div p {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 27px;
+  line-height: 1.625rem;
+}

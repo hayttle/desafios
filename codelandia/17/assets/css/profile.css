@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Mukta:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffa634;
+  --gradient-dark: #ff267a;
+  --gradient-light: #ffa634;
+  --white: #f9f9f9;
+  --gray: #a8a8a8;
+  --gray-dark: #181818;
+  --dark: #121214;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--dark);
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 1080px;
+  color: var(--white);
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 63px;
+}
+
+header .logo {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: Mukita, sans-serif;
+  background: -webkit-linear-gradient(
+    0deg,
+    var(--gradient-light),
+    var(--gradient-dark)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header .time {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3.6rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 6.4rem;
+  margin-bottom: 2.4rem;
+}
+
+main h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  margin-bottom: 20.9rem;
+}
+
+.profiles {
+  display: flex;
+  gap: 13.6rem;
+  margin-bottom: 13.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile .circle {
+  width: 176px;
+  height: 176px;
+  border-radius: 88px;
+  margin-bottom: 4rem;
+}
+
+.circle1 {
+  background: linear-gradient(225deg, #781fd1 0%, #570eab 100%);
+}
+
+.circle2 {
+  background: linear-gradient(180deg, #64fa9b 0%, #5fe36a 100%);
+}
+
+.circle3 {
+  background: linear-gradient(180deg, #4df0f3 0%, #4d7bfd 100%);
+}
+
+.profile .name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+
+button {
+  width: 229px;
+  height: 59px;
+  background-color: var(--gray-dark);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--white);
+  border: 0;
+  cursor: pointer;
+}

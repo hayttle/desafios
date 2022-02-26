@@ -1,0 +1,151 @@
+{
+  "projects": [
+    {
+      "id": "01",
+      "title": "Blog page",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "02",
+      "title": "Jordan Shoes",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "03",
+      "title": "One page",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "04",
+      "title": "Login page",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "05",
+      "title": "Studio Ghibli",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "06",
+      "title": "LOKI",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "07",
+      "title": "Valorant",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "08",
+      "title": "CodeMoji",
+      "technology": ["html", "css"],
+      "responsive": false,
+      "status": "enabled"
+    },
+    {
+      "id": "09",
+      "title": "Portfólio",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "10",
+      "title": "Naped",
+      "technology": ["html", "css"],
+      "responsive": false,
+      "status": "enabled"
+    },
+    {
+      "id": "11",
+      "title": "Jogo da Memória",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "12",
+      "title": "La Pizza",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "13",
+      "title": "Arcane",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "14",
+      "title": "HelpDog",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "15",
+      "title": "Portfólio Github",
+      "technology": ["html", "css"],
+      "responsive": false,
+      "status": "disabled"
+    },
+    {
+      "id": "16",
+      "title": "Feliz Natal",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "17",
+      "title": "Kenai",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "18",
+      "title": "Spider-man",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "19",
+      "title": "Rachi",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "20",
+      "title": "Portfólio",
+      "technology": ["html", "css", "javascript"],
+      "responsive": true,
+      "status": "enabled"
+    },
+    {
+      "id": "21",
+      "title": "XBOX",
+      "technology": ["html", "css", "javascript"],
+      "responsive": false,
+      "status": "enabled"
+    }
+  ]
+}

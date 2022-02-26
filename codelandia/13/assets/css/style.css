@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f9f9f9;
+  --white200: #e3d2bc;
+  --gray: #585858;
+  --black: #161616;
+}
+
+body {
+  font-family: Sora, sans-serif;
+  background-image: linear-gradient(
+      0.01deg,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.35) 100%
+    ),
+    url("../images/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  padding: 33px 20% 0px;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > div {
+  display: flex;
+  gap: 60px;
+}
+
+header .right img {
+  width: 156px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  margin-bottom: 237px;
+}
+
+main img {
+  max-width: 600px;
+}
+
+main button {
+  width: 400px;
+  height: 80px;
+  background-color: var(--white200);
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--black);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+
+footer .episode {
+  display: none;
+}
+
+footer .back {
+  background-color: var(--white200);
+  margin-left: 60px;
+  width: 724px;
+  height: 187px;
+  border: 2px solid var(--black);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+}
+
+footer .video-play {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  bottom: 50px;
+}
+
+.video-play > img {
+  width: 230px;
+  height: auto;
+  cursor: pointer;
+}
+
+.video-play .callToAction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.callToAction h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 21px;
+}
+
+.callToAction p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--gray);
+}
+
+.bar {
+  z-index: -1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: var(--white200);
+  opacity: 0.2;
+  border-radius: 0px 0px 0px 24px;
+  width: 1420px;
+  height: 111px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    max-width: 100%;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+  }
+
+  header > div {
+    gap: 15px;
+  }
+
+  main img {
+    width: 400px;
+  }
+
+  main button {
+    width: 200px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+  main {
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+  footer .back,
+  footer .video-play {
+    display: none;
+  }
+
+  footer .episode {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .episode img {
+    width: 180px;
+    height: 120px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  footer .episode button {
+    width: 180px;
+    padding: 10px;
+    border: 2px solid var(--black);
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+    background-color: var(--white200);
+  }
+  footer .episode button h2 {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+  }
+  footer .episode button p {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #da2535;
+  --pink: #f7c7b9;
+  --white: #f9f9f9;
+  --gray: #8d8d8d;
+  --gray-200: #404040;
+  --black-light: #161212;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: var(--black-light);
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 11.2rem;
+}
+
+header .container {
+  padding-top: 2.3rem;
+  padding-bottom: 7.1rem;
+  background-color: var(--pink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .container {
+  background-color: var(--pink);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 19.4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo > img {
+  width: 35px;
+  height: auto;
+}
+
+.logo > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.bars {
+  font-size: 2.4rem;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-light);
+}
+
+ul {
+  display: flex;
+  gap: 5.1rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  line-height: 5.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--gray-200);
+  margin-bottom: 4rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 8px;
+  border: 0;
+  padding: 12px 32px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 208px;
+}
+
+section {
+  max-width: 1440px;
+}
+
+.right > img {
+  max-width: 100%;
+}
+
+.accessories {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.8rem;
+  padding-bottom: 8.2rem;
+}
+
+.accessories h1 {
+  text-align: center;
+}
+
+.accessories p {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 13.9rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: auto;
+}
+
+.card > img {
+  width: 200px;
+  height: 200px;
+}
+
+.card > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 1.7rem;
+  margin-bottom: 1.2rem;
+}
+
+.card > p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.donation {
+  background-color: var(--pink);
+  padding: 9rem 0;
+}
+
+.donation .container {
+  display: flex;
+  gap: 22.4rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.donation .container > img {
+  max-width: 400px;
+  height: auto;
+}
+
+.donation .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  width: 100%;
+}
+
+.contacts .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.contact li {
+  width: 40px;
+  height: 40px;
+  background-color: var(--pink);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact li > i {
+  color: var(--red);
+  font-size: 2rem;
+}
+
+.top {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.top > i {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1260px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .hero p br,
+  .accessories p br,
+  .donation p br {
+    display: none;
+  }
+
+  header .container {
+    flex-direction: row;
+    padding-bottom: 4rem;
+  }
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  header .links {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+  }
+  .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
+  .card > h2 {
+    margin: 0;
+  }
+  .hero .container {
+    padding-bottom: 0;
+  }
+
+  .accessories {
+    padding: 4rem 0;
+  }
+
+  .accessories p {
+    margin: 0;
+  }
+
+  .donation {
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+
+  .donation .container {
+    gap: 0.5rem;
+  }
+
+  .top {
+    width: 30px;
+    height: 30px;
+    bottom: 25px;
+    left: 20px;
+  }
+  .top > i {
+    font-size: 1.5rem;
+  }
+
+  .contacts .logo {
+    display: none;
+  }
+
+  .contacts .container {
+    padding: 2.5rem 20px;
+    align-items: flex-end;
+  }
+  .contact ul {
+    gap: 2rem;
+  }
+
+  .contact li {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact li i {
+    font-size: 1.5rem;
+  }
+  .bars {
+    display: none;
+  }
+}

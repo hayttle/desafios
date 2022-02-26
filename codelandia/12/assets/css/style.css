@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --green: #5c913b;
+  --yellow: #ffa200;
+  --red: #cf3031;
+  --pink: #ffd4c9;
+  --pink-light: #fef6f4;
+  --white: #ffffff;
+  --white-200: #fcfcfc;
+  --gray: #616161;
+  --gray-200: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Sora, sans-serif;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url("../images/hero.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-weight: 500;
+  font-size: 6rem;
+  color: var(--white);
+}
+
+section.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 160px;
+  position: relative;
+  width: 100%;
+  min-height: 757px;
+}
+
+section.features > h2 {
+  margin-bottom: 28px;
+}
+
+section.features .cards {
+  display: flex;
+  gap: 32px;
+}
+
+section.features .card {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  height: 350px;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+section.features .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 256px;
+  height: 275px;
+  background-color: var(--pink-light);
+  border-radius: 25px;
+  position: relative;
+  padding: 0 38px;
+}
+
+section.features .item > img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -60px;
+}
+
+section.features .item > h3 {
+  margin-top: 76px;
+  margin-bottom: 8px;
+}
+
+section.features .item > p {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: var(--gray);
+  text-align: center;
+  line-height: 1.25rem;
+  margin-bottom: 28px;
+}
+
+section.features .item > span {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--gray-200);
+  margin-bottom: 40px;
+}
+
+section.features .item > button {
+  width: 157px;
+  height: 31px;
+  background-color: var(--yellow);
+  color: var(--gray-200);
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 25px;
+  border: 0;
+  padding: 8px 32px;
+  position: absolute;
+  bottom: -15px;
+  cursor: pointer;
+}
+
+section.features .item .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -17px;
+  right: 10px;
+  background-color: var(--pink);
+  border: 2px solid var(--red);
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+section.features .item .heart > img {
+  width: 13px;
+  height: 12px;
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.red {
+  color: var(--red);
+}
+
+.green {
+  color: var(--green);
+}
+
+section.about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 0;
+  background-color: var(--white-200);
+  gap: 96px;
+  padding-left: 160px;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+}
+
+section.about .left {
+  position: relative;
+}
+
+section.about .left .restaurant {
+  max-width: 448px;
+  max-height: 501px;
+}
+
+section.about .left .pizza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  position: absolute;
+  top: 22px;
+  left: -70px;
+  box-shadow: 0px 3.04px 3.04px rgba(159, 62, 62, 0.25);
+}
+
+section.about .left .pizza > img {
+  width: 120px;
+  height: 120px;
+}
+
+section.about .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 458px;
+}
+
+section.about .right > h2 {
+  margin-bottom: 24px;
+}
+
+section.about .right > p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: var(--gray-200);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--gray-200);
+}
+
+section.about .right > button {
+  width: 148px;
+  height: 39px;
+  background-color: var(--yellow);
+  color: var(--gray-200);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 0;
+  padding: 12px 40px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: var(--gray-200);
+  width: 100%;
+  height: 50px;
+}
+
+.planta {
+  position: absolute;
+  left: 0;
+  top: -50px;
+}
+
+.peixe {
+  position: absolute;
+  left: 382px;
+  top: 80px;
+}
+
+.mashroom {
+  position: absolute;
+  right: 198px;
+  top: 87px;
+}
+
+.folha {
+  position: absolute;
+  right: 70px;
+  top: 327px;
+}
+
+.pimenta {
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+}
+
+.tomate {
+  position: absolute;
+  right: 140px;
+  top: -75px;
+}
+
+.pizza-tabua {
+  position: absolute;
+  right: 110px;
+  bottom: 110px;
+}
+
+@media screen and (max-width: 700px) {
+  section.features .cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+  }
+
+  section.features {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  section.about {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  section.about .left {
+    display: flex;
+    justify-content: center;
+  }
+  section.about .left .pizza {
+    display: none;
+  }
+
+  section.about .right > p,
+  h2 {
+    text-align: center;
+  }
+
+  section.about .left img {
+    width: 80%;
+  }
+
+  .peixe {
+    left: unset;
+    top: 10px;
+    right: 10px;
+  }
+
+  .tomate {
+ 
+  right: 2px;
+  top: -105px;
+}
+
+.pimenta {
+ 
+  left: 0px;
+  bottom: 295px;
+}
+
+.folha {
+ 
+  right: 0px;
+  top: 327px;
+}
+
+.pizza-tabua {
+ display: none;
+}
+section.about .right > button {
+  width: 100%;
+}
+
+}

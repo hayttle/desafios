@@ -1,0 +1,410 @@
+@import url('./global.css');
+
+.container > h1 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 11px;
+}
+
+.container > p {
+  font-family: Inter, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--white-200);
+  margin-bottom: 80px;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  min-width: 761px;
+}
+
+.left .hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url('../images/index/banner.svg');
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 17px 30px 15px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left .hero button {
+  width: 80px;
+  height: 25px;
+  background-color: var(--purple-light);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--white);
+  border-radius: 3px;
+  border: 0;
+  padding: 4px 18px;
+}
+
+.left .hero p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--white);
+  line-height: 2.125rem;
+}
+
+.left .content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  overflow-y: scroll;
+  height: 894px;
+}
+
+.left .content::-webkit-scrollbar {
+  background-color: var(--gray-200);
+  width: 12px;
+}
+
+.left .content::-webkit-scrollbar-thumb {
+  background: var(--purple-light);
+}
+
+.left .content::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-300);
+}
+
+.thumb-news {
+  display: flex;
+  gap: 18px;
+  padding-right: 139px;
+}
+
+.thumb-news .thumb {
+  min-width: 200px;
+  height: 151px;
+  padding: 10px;
+}
+
+.thumb-news .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thumb-news .description h3 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.815rem;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.25rem;
+  /* margin-bottom: 10px; */
+}
+
+.thumb-news .description p {
+  font-family: Inter, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: var(--white-200);
+  line-height: 1rem;
+  /* margin-bottom: 6px; */
+}
+
+.thumb-news .description span {
+  font-family: Inter, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--white-200);
+  line-height: 1.25rem;
+  /* margin-bottom: 9px; */
+}
+
+.thumb-news .description button {
+  width: 100px;
+  height: 25px;
+  font-family: Inter, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.25rem;
+  background-color: var(--purple-light);
+  border-radius: 3px;
+  border: 0;
+  /* padding: 2px 22px; */
+}
+
+.thumb-news .thumb button {
+  width: 60px;
+  height: 15px;
+  background-color: var(--purple-light);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: var(--white);
+  padding: 1px 14px;
+  border-radius: 3px;
+  border: 0;
+}
+
+.left .thumb1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/thumb1.svg');
+}
+
+.left .thumb2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/thumb2.svg');
+}
+
+.left .thumb3 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/thumb3.svg');
+}
+
+.left .thumb4 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/thumb4.svg');
+}
+
+.left .thumb5 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/thumb5.svg');
+}
+
+.thumb-news .description {
+  display: flex;
+  flex-direction: column;
+}
+
+.right .hero-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.right .hero-mini .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 338px;
+  height: 165px;
+  padding: 10px;
+}
+
+.right button {
+  border-radius: 3px;
+  border: 0;
+  background-color: var(--purple-light);
+  width: 70px;
+  height: 20px;
+  color: var(--white);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.right p {
+  color: var(--white);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+.item1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/mini-banner1.svg');
+}
+
+.item2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/mini-banner2.svg');
+}
+
+h2 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 13px;
+}
+
+.right .thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+
+.right .thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 338px;
+  height: 250px;
+  padding: 10px;
+}
+
+.right .thumb1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/A-Viagem-de-Chihiro-chihiro-e-haku.svg');
+}
+
+.right .thumb2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/cena-do-filme-a-rede-social-2010-1547503577708_v2_1920x1204.svg');
+}
+
+.right .thumb3 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('../images/index/NarTrailer_Print09.max-1920x1200.svg');
+}
+
+.more-news {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 95px;
+}
+
+.border {
+  background-color: var(--purple-light);
+  width: 250px;
+  height: 3px;
+  margin-bottom: 39px;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 52px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 338px;
+  min-height: 250px;
+  padding: 10px 20px;
+}
+
+.card p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.815rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.card button {
+  width: 70px;
+  height: 20px;
+  background-color: var(--purple-light);
+  border-radius: 3px;
+  border: 0;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--white);
+  padding: 3px 16px;
+}
+
+.card1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('../images/news/Vidas-ao-Vento-Naoko.svg');
+}
+.card2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('../images/news/GTA-5-PlayStation-5-Rockstar-Games-Sony-2020.svg');
+}
+.card3 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('../images/news/Vikings-Série-Derivada.svg');
+}
+.card4 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('../images/news/soul-disney-pixar-1220-1400x800-5.svg');
+}
+.card5 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('../images/news/your-name-21.svg');
+}
+.card6 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('../images/news/key-visual.svg');
+}

@@ -1,0 +1,151 @@
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+
+  --title: #313131;
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: local('Lexend Deca'), url('../fonts/LexendDeca-Regular.ttf ');
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+  src: local(Inter), url('../fonts/Inter-Medium.ttf');
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+header {
+  height: 100%;
+  background: var(--linear);
+  padding: 0.5em 0;
+  margin-bottom: 3em;
+}
+
+header .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em auto;
+}
+
+header h1,
+nav a {
+  font: normal 400 1.5em/1.5 'Lexend Deca';
+  color: var(--white);
+}
+
+.input-search {
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  margin: 1em auto;
+  padding: 0.5em 0.875em;
+  border-radius: 0.25em;
+}
+
+.icon-input {
+  width: 25px;
+}
+
+form {
+  width: 100%;
+}
+
+form input {
+  width: 100%;
+  padding: 0.3em;
+
+  border: none;
+  background: none;
+
+  color: var(--white);
+  opacity: 0.8;
+  font: normal 400 1.125em/1.5 'Lexend Deca';
+}
+
+::-webkit-input-placeholder {
+  color: var(--white);
+  opacity: 0.6;
+  font-family: 'Lexend Deca';
+}
+
+main {
+  margin: 4em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article {
+  background-color: var(--white);
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 0.25em;
+  box-shadow: 0px 4px 8px #e2e2e2;
+}
+
+article .info-article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article .info-article small {
+  font: normal 400 0.875em 'Lexend Deca';
+  color: var(--text);
+}
+
+article h2 {
+  font: normal 400 1.6em/1.5 'Lexend Deca';
+  color: var(--title);
+}
+
+article p {
+  font: normal 400 1em/1.75 'Lexend Deca';
+  color: var(--text);
+  margin-top: 0.625em;
+}

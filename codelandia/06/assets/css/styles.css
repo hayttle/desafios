@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #ffffff;
+  font-family: B612;
+  margin: 0 auto;
+  background-image: url("../images/fundo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: B612;
+  src: url("../fonts/B612-Regular.ttf");
+}
+
+@font-face {
+  font-family: B612-bold;
+  src: url("../fonts/B612-Bold.ttf");
+}
+
+div.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 230px; */
+  margin-top: 30px;
+  width: 100%;
+}
+
+.movie {
+  display: flex;
+  gap: 73px;
+}
+
+.description {
+  max-width: 722px;
+}
+
+.description p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 32px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 42px;
+}
+
+.info .clock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.stars {
+  width: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: bold;
+  margin-bottom: 125px;
+  font-family: B612-bold;
+}
+
+.cover {
+  width: 184px;
+  height: 267px;
+  border-radius: 20px;
+}
+
+button {
+  color: #ffffff;
+  height: 55px;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+button:first-child {
+  background-color: #0072d2;
+  padding: 15px 27px;
+  margin-right: 21px;
+}
+
+button:last-child {
+  background-color: #131318;
+  padding: 15px 25px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+
+  .movie {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .description p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+  .info {
+    gap: unset;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .clock img {
+    width: 25px;
+  }
+
+  .stars img {
+    width: 30px;
+    height: 30px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description > :nth-child(2) {
+    order: 1;
+  }
+  .description > :nth-child(1) {
+    order: 2;
+  }
+  .description > :nth-child(3) {
+    order: 3;
+  }
+}

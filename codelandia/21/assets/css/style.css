@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #9bf00b;
+  --dark: #0c0c0c;
+  --gray: #777777;
+  --gray-light: #c0c0c0;
+  --light: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1920;
+  background-color: var(--dark);
+  font-family: Inter, sans-serif;
+  color: var(--light);
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+button {
+  cursor: pointer;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1235px;
+  height: 100%;
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 56px;
+  margin-bottom: 183px;
+}
+
+.logo img {
+  width: 144px;
+  height: 44px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.link {
+  width: 224px;
+  height: 60px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 110px;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-weight: 600;
+  font-size: 7.2rem;
+  margin-bottom: 48px;
+}
+
+.hero h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 48px;
+  color: var(--primary);
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.xbox {
+  position: relative;
+  
+  width: 1235px;
+  height: 597px;
+}
+
+.xbox img {
+  width: 100%;
+  height: 597px;
+  position: absolute;
+  top: 0;
+}
+
+.xbox .gradient {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(134, 207, 9, 0.258984) 20.31%,
+    rgba(155, 240, 11, 0.3) 23.53%,
+    rgba(0, 219, 0, 0.3) 35.42%,
+    rgba(0, 219, 0, 0.3) 40.63%,
+    rgba(0, 219, 0, 0.3) 49.51%
+  );
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  border: 1px solid #000000;
+  filter: blur(200px);
+}
+
+.control .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 158px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+.control .left h2 {
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+.control .left h2 span {
+  color: var(--primary);
+}
+
+.control .left p {
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: var(--gray);
+  line-height: 170%;
+}
+
+.control .right img {
+  width: 500px;
+}
+
+.games .content {
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+}
+
+.game {
+  width: 480px;
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 64px;
+}
+
+.game img.banner-text {
+  width: 300px;
+}
+
+.game1 {
+  background-image: url("../images/farcry6.svg");
+}
+.game2 {
+  background-image: url("../images/forza.svg");
+}
+.game3 {
+  background-image: url("../images/fifa.png");
+}
+.game4 {
+  background-image: url("../images/minecraft.svg");
+}
+
+.faqs .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+  width: 1228px;
+}
+.faqs h2 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 4.8rem;
+  margin-bottom: 17px;
+}
+
+.faqs h2 span {
+  color: var(--primary);
+}
+
+.faqs .content .faq {
+  width: 100%;
+  padding-bottom: 31px;
+  border-bottom: 2px solid var(--gray);
+}
+
+.faqs .content .faq .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 43px;
+  cursor: pointer;
+}
+
+.faqs .content .faq h3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 36px;
+}
+
+.arrow{
+  font-size: 2.5rem;
+  color: var(--gray);
+}
+
+.rotate{
+  transform: rotate(180deg);
+  color: var(--primary);
+}
+
+.answer {
+  display: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 27px;
+  color: var(--gray-light);
+  padding-left: 20px;
+  margin-top: 36px;
+}
+
+.active {
+  display: block;
+}
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 192px;
+  margin-bottom: 84px;
+}
+
+.trademark {
+  display: flex;
+  gap: 56px;
+}
+
+.trademark span {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--gray);
+}

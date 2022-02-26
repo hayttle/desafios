@@ -1,0 +1,123 @@
+@import url('./global.css');
+
+.hero {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.01) 30%,  rgba(0,0,0,1) 100%),url('../images/search/naruto-tobi-wallpaper-1440x900_4.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 85px 40px;
+  margin-bottom: 42px;
+}
+
+.hero h1 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--white-200);
+  line-height: 2rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: var(--gray-200);
+  padding: 18px 25px;
+  margin-bottom: 100px;
+}
+
+form {
+  width: 100%;
+}
+
+form input {
+  width: 100%;
+  color: var(--gray-400);
+  background: none;
+  border: 0;
+  font-size: 1.25rem;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  gap: 52px;
+}
+
+.card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 250px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card1{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0) 50%,  rgba(0,0,0,1) 100%),url('../images/search/Vidas-ao-Vento-Naoko.svg');
+}
+
+.card2{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0) 50%,  rgba(0,0,0,1) 100%),url('../images/search/kid-goku-dragon-ball-thumb.svg');
+}
+
+.card3{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0) 50%,  rgba(0,0,0,1) 100%),url('../images/search/wp79470071.svg');
+}
+
+.card p{
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color:var(--white);
+  line-height: 1.25rem;
+}
+
+.pagination{
+  display: flex;
+  gap: 8px;
+  margin-top: 62px;
+  margin-bottom: 106px;
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--gray-200);
+  border-radius: 3px;
+  font-family: Inter,sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--white-200);
+  cursor: pointer;
+}
+
+.first{
+  color: var(--gray-300);
+}
+
+.one{
+  color: var(--purple-light);
+  border: 1px solid var(--purple-light);
+}

@@ -1,0 +1,117 @@
+@import url('./global.css');
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+header{
+  margin-bottom: 185px;
+}
+
+li {
+  background-image: linear-gradient(180deg, var(--white-200), var(--dark));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.left {
+  width: 50%;
+}
+.left h1 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.left p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--white-200);
+  margin-top: 17px;
+  margin-bottom: 41px;
+  line-height: 2.125rem;
+}
+
+.left button {
+  width: 174px;
+  height: 44px;
+  color: var(--white-200);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  background-color: var(--purple-light);
+  border-radius: 5px;
+  border: 0;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right img {
+  max-width: 400px;
+  max-height: 205px;
+  margin-bottom: 45px;
+}
+
+.right p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--white-200);
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    margin-bottom: 50px;
+  }
+
+  header ul {
+    display: none;
+  }
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .right img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .right p{
+    font-size: 1.125rem;
+  }
+  .left h1 {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  .left p {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .left button {
+    width: 100%;
+  }
+}

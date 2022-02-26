@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Poppins-regular;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-black;
+  src: url("../fonts/Poppins-Black.ttf");
+}
+
+body {
+  background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f9f9f9;
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 165px;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 48px;
+}
+
+.social-media {
+  height: 24px;
+  padding: 0 10px;
+}
+
+.ilustration {
+  width: 500px;
+  height: 370px;
+}
+
+.left {
+  width: 445px;
+}
+
+.left h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  font-family: Poppins-regular;
+  flex-grow: 0;
+  letter-spacing: 0.03em;
+}
+
+.left h1 {
+  font-size: 68px;
+  font-weight: 900;
+  margin: 14px 0px;
+  line-height: 109%;
+  flex-grow: 0;
+  font-family: Poppins-black;
+  letter-spacing: 0.03em;
+}
+
+.left p {
+  font-size: 14px;
+  font-family: Poppins-regular;
+  line-height: 180%;
+  margin-top: 25px;
+  letter-spacing: 0.08em;
+}
+
+.right {
+  width: 445px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 46px;
+  margin-bottom: 5px;
+}
+
+.btn img {
+  width: 225px;
+}
+
+@media (max-width: 700px) {
+  header {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 25px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left h2 {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+  }
+
+  .left h1 {
+    font-size: 56px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  .left p {
+    letter-spacing: unset;
+    margin: 0;
+  }
+
+  .btn-trailer {
+    display: none;
+  }
+
+  .right {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ilustration {
+    width: 300px;
+    height: 260px;
+  }
+}

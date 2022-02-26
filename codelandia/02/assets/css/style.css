@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  height: 60px;
+  top: 15px;
+  background: #181818;
+  color: #f9f9f9;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 196.19%;
+  /* or 31px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 60px;
+  left: 0px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 196.19%;
+  /* identical to box height, or 47px */
+  justify-content: center;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: url('../images/wallpaper.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 378px;
+}
+
+.text-banner h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 80px;
+  color: #f9f9f9;
+  padding-bottom: 15px;
+}
+
+.text-banner p {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 80px;
+  color: #f9f9f9;
+  width: 500px;
+  line-height: 196.19%;
+}
+
+.text-features h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 196.19%;
+  /* identical to box height, or 63px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #181818;
+  padding-top: 30px;
+}
+
+.text-features p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 196.19%;
+  /* or 35px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #474747;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.item {
+  width: 300px;
+  height: 302px;
+  background: #ebe9ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  width: 250px;
+  height: 150px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background: #181818;
+  color: #f9f9f9;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .text-banner h2,
+  .text-banner p {
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .text-features {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .item {
+    width: 374px;
+    padding: 0 20px;
+  }
+
+  .banner {
+    background-attachment: initial;
+  }
+}
