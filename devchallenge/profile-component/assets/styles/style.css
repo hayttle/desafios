@@ -11,6 +11,7 @@
   --primary: #0f0e0e;
   --font-color: #b7b7b7;
   --bg-button: #1b1b1b;
+  --bg-button-hover: #313131;
   --green: #046313;
   --blue: #044a7d;
   --yellow: #725200;
@@ -75,6 +76,11 @@ button {
   color: var(--font-color);
   font-size: 1.9rem;
   padding: 14px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--bg-button-hover);
 }
 
 main {
@@ -96,6 +102,8 @@ main {
   padding: 18px 38.4px;
   border-radius: 8px;
   width: 30%;
+  cursor: pointer;
+  transition: .3s ease;
 }
 .card h2 {
   font-size: 1.9rem;
@@ -105,6 +113,10 @@ main {
 .card span {
   font-size: 4.8rem;
   font-weight: 500;
+}
+
+.card:hover{
+transform: scale(1.05);
 }
 
 .projects {
