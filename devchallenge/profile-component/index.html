@@ -9,35 +9,41 @@
   <link rel="stylesheet" href="./assets/styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
+
 <body>
   <div class="container">
     <header>
       <div class="profile">
-        <img src="./assets/images/image_work.jpg" alt="" class="avatar">
+        <img id="avatar" src="" alt="" style="display:none;" class="avatar">
         <div class="info">
-          <h1>Hayttle Soljnivisk</h1>
-          <span>@hayttle</span>
+          <h1 id="name"></h1>
+          <p id="username" class="username"></p>
+          <p id="bio" class="bio"></p>
         </div>
       </div>
-      <button class="btn"><i class="fas fa-edit"></i> Editar</button>
+      <div class="search">
+        <input id="input" class="input" type="text" placeholder="Github username">
+        <button id="btn-search" class="btn"><i class="fas fa-search"></i> Search</button>
+      </div>
     </header>
     <main>
       <div class="cards">
         <div class="card projects">
-          <h2>Projetos</h2>
-          <span>27</span>
+          <h2>Repositórios públicos</h2>
+          <span id="repo""></span>
         </div>
-        <div class="card stars">
-          <h2>Estrelas</h2>
-          <span>302</span>
+        <div class=" card stars">
+            <h2>Seguindo</h2>
+            <span id="following"></span>
         </div>
         <div class="card followers">
           <h2>Seguidores</h2>
-          <span>83</span>
+          <span id="followers"></span>
         </div>
       </div>
     </main>
   </div>
+  <script src="./assets/javascript/script.js"></script>
 </body>
 
 </html>

@@ -58,28 +58,52 @@ header {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  display: flex;
 }
 
 .info h1 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
-.info span {
-  font-size: 2.4rem;
+.info p.username {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
 }
 
+.info p.bio {
+  font-size: 1.6rem;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.input:focus {
+  outline: none;
+}
 button {
   border-radius: 5px;
   border: none;
   background-color: var(--bg-button);
   color: var(--font-color);
-  font-size: 1.9rem;
-  padding: 14px;
+  font-size: 1.6rem;
+  padding: 10px;
   cursor: pointer;
+  /* width: 120px; */
 }
 
-button:hover{
+button:hover {
   background-color: var(--bg-button-hover);
 }
 
@@ -103,7 +127,7 @@ main {
   border-radius: 8px;
   width: 30%;
   cursor: pointer;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 .card h2 {
   font-size: 1.9rem;
@@ -115,8 +139,8 @@ main {
   font-weight: 500;
 }
 
-.card:hover{
-transform: scale(1.05);
+.card:hover {
+  transform: scale(1.05);
 }
 
 .projects {
@@ -137,28 +161,25 @@ transform: scale(1.05);
     min-width: 375px;
   }
   header {
-    width: 100vw;
+    width: 80vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
-  
-  .profile{
+
+  .profile {
     flex-direction: column;
     text-align: center;
   }
   .info h1 {
     font-size: 2.4rem;
   }
-  .info span {
-    font-size: 2rem;
-  }
-  
+
   button {
-  font-size: 1.6rem;
-  padding: 10px;
-}
+    font-size: 1.6rem;
+    padding: 10px;
+  }
 
   main {
     width: 100vw;
