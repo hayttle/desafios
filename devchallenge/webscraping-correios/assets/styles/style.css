@@ -42,8 +42,8 @@ header {
 }
 
 header img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 8px;
 }
 
@@ -57,6 +57,7 @@ header h1::after {
   height: 4px;
   background-color: var(--gray-light);
   display: block;
+  margin-top: 5px;
 }
 
 main {
@@ -82,6 +83,7 @@ main .form {
 }
 
 input {
+  width: 200px;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -91,7 +93,7 @@ input {
   font-weight: 600;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
@@ -112,22 +114,25 @@ button:hover {
   opacity: 0.9;
 }
 
-@media screen and (max-width:600px){
-  .container{
-    width: 90vw;
-    padding: 15px;
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+    width: 95vw;
+    height: 100vh;
+    padding: 30px 15px;
+    border-radius: 0;
   }
 
-header{
-  gap: 15px;
-}
+  header {
+    gap: 15px;
+  }
 
-header img{
-  width: 60px;
-  height: 60px;
-}
+  header img {
+    width: 60px;
+    height: 60px;
+  }
 
-  header h1{
-    font-size: 1.8rem;
+  header h1 {
+    font-size: 1.6rem;
   }
 }
