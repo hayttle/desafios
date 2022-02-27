@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #1a203c;
+  --dark: #353535;
+  --gray: gray;
+  --gray-light: #e6e6e6;
+  --bg-button: #1d4761;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--gray-light);
+  font-family: Roboto, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 5rem auto;
+  padding: 20px;
+  background-color: var(--background);
+  width: 550px;
+  height: 500px;
+  border-radius: 8px;
+}
+header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+}
+
+header h1::after {
+  content: "";
+  width: 60%;
+  height: 4px;
+  background-color: var(--gray-light);
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .form {
+  display: flex;
+  gap: 10px;
+}
+
+.res {
+  width: 100%;
+  height: auto;
+  font-size: 1.6rem;
+}
+
+.res > *:not(:last-child) {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: var(--dark);
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+input:focus{
+  outline: none;
+}
+
+button {
+  font-size: 1.6rem;
+  padding: 10px;
+  background-color: var(--bg-button);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+  color: var(--gray-light);
+  font-weight: 600;
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width:600px){
+  .container{
+    width: 90vw;
+    padding: 15px;
+  }
+
+header{
+  gap: 15px;
+}
+
+header img{
+  width: 60px;
+  height: 60px;
+}
+
+  header h1{
+    font-size: 1.8rem;
+  }
+}
