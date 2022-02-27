@@ -1,7 +1,6 @@
-# Desafio de programação web
+# Desafios de programação web
 
 Nessa série de desafios de programação web eu procuro adquirir conhecimentos e colocar em prática fazendo os mais diversos projetos.
 
-## <a href="https://hayttle.github.io/desafios/" target="_blank">Link para acesso</a>
-
+### [Link para acesso](https://hayttle.github.io/desafios/)
 ![](/assets/images/homepage.png)
