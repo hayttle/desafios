@@ -97,7 +97,7 @@ main .designer {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
   justify-content: space-between;
   gap: 50px;
 }
@@ -161,15 +161,14 @@ main .designer {
   opacity: 0.8;
 }
 
-.btn-view{
+.btn-view {
   margin-bottom: 10px;
   background-color: var(--gray-300);
 }
 
-.btn-repo{
+.btn-repo {
   background-color: var(--gray-200);
 }
-
 
 .thumb {
   width: 100%;
