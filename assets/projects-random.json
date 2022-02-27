@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": "01",
+      "folder": "todo-list",
+      "title": "ToDo List - Pure CSS",
+      "technology": ["html", "css"],
+      "responsive": true,
+      "status": "enabled"
+    }
+  ]
+}
