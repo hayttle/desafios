@@ -794,6 +794,7 @@ input:checked + .slider .feather-moon {
   .experience li label {
     min-width: unset;
     padding: unset;
+    border-bottom: 3px solid transparent;
   }
 
   .experience li .description {
