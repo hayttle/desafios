@@ -103,7 +103,7 @@
       "title": "Portfólio Github",
       "technology": ["html", "css"],
       "responsive": false,
-      "status": "enabled"
+      "status": "disabled"
     },
     {
       "id": "16",
