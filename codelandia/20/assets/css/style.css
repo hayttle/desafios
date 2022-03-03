@@ -353,70 +353,97 @@ button i {
 }
 
 .experience {
-  height: 585px;
   background-color: var(--dark);
 }
 
 .experience .content {
   display: flex;
-  gap: 103px;
+  flex-direction: column;
   align-items: center;
+  padding: 50px 0;
 }
 
-.experience .left h2 {
+.experience .content h2 {
   text-transform: uppercase;
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 44px;
 }
 
-.experience .left ul {
+.experience ul {
   display: flex;
   flex-direction: column;
   gap: 31px;
-  padding-left: 36px;
+  width: 100%;
+  position: relative;
 }
 
-.experience .left li {
+.experience li {
+  display: flex;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.experience li label {
+  min-width: 200px;
+  padding-left: 5px;
   cursor: pointer;
 }
 
-.experience .right {
-  display: flex;
-  flex-direction: column;
+.experience li label:hover {
+  color: var(--gray-light);
 }
 
-.experience .right .title {
+.experience li .description {
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.experience .description .title {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 28px;
 }
 
-.experience .right .title h2 {
+.experience .description .title h2 {
   font-size: 2.4rem;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.experience .right .title span {
+.experience .description .title span {
   font-size: 1.6rem;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.experience .right .tag {
+.experience .description .tag {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--blue);
-  margin-bottom: 26px;
+  margin-bottom: 5px;
+  display: block;
 }
 
-.experience .right p {
+.experience .description p {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.8rem;
   color: var(--gray-light);
+}
+
+.experience input,
+.experience .description {
+  display: none;
+}
+
+.experience input:checked ~ .description {
+  display: block;
+}
+
+.experience input:checked ~ label {
+  border-left: 3px solid var(--blue);
 }
 
 .projects {
@@ -686,6 +713,8 @@ input:checked + .slider .feather-moon {
   transform: translateX(-4px);
 }
 
+/* MEDIA QUERY */
+
 @media screen and (max-width: 800px) {
   .content {
     padding: 0 20px;
@@ -718,13 +747,11 @@ input:checked + .slider .feather-moon {
     height: 500px;
   }
 
-  .experience .content,
   .about-me .content {
     flex-direction: column;
   }
-  .about-me,
-  .experience {
-    height: auto;
+  .about-me{
+    height: 900px;
   }
 
   .about-me .left {
@@ -736,31 +763,50 @@ input:checked + .slider .feather-moon {
     clip-path: circle();
   }
 
-  .about-me .content,
+  .about-me .content {
+    gap: 15px;
+  }
+
   .experience .content {
-    gap: 25px;
+    padding: 20px;
+    gap: 15px;
   }
 
   .about-me .right h2,
-  .experience .left h2,
-  .experience .right .title h2,
+  .experience .content h2,
+  .experience .description .title h2,
   .projects h2,
-  .experience .right .tag {
+  .experience .tag {
     font-size: 1.8rem;
     margin-bottom: 15px;
   }
   .about-me .right h3,
-  .experience .left li,
-  .experience .right .title span,
+  .experience li,
+  .experience .description .title span,
   .projects .cards .card h3 {
     font-size: 1.4rem;
   }
   .about-me .right p br,
-  .experience .right p br {
+  .experience p br {
     display: none;
   }
+
+  .experience li label {
+    min-width: unset;
+    padding: unset;
+  }
+
+  .experience li .description {
+    top: 100px;
+    left: 0;
+  }
+
+  .experience .content{
+    height: 600px;
+  }
+
   .about-me .right p,
-  .experience .right p,
+  .experience .description p,
   .projects .cards .card p,
   footer {
     text-align: justify;
@@ -768,19 +814,22 @@ input:checked + .slider .feather-moon {
     font-size: 1.4rem;
   }
 
-  .experience .left,
-  .projects h2 {
-    margin-top: 50px;
-  }
-  .experience .left ul {
+  .experience ul {
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: unset;
+    gap: 20px;
   }
-  .experience .right .title {
-    margin-bottom: 20px;
+
+  .experience input:checked ~ label{
+    border-left: unset;
+    border-bottom: 3px solid var(--blue);
+  }
+  .experience .title {
     flex-direction: column;
+  }
+  .projects h2 {
+    margin-top: 50px;
   }
   .projects .cards {
     justify-content: center;

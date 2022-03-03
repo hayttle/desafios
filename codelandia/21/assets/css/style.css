@@ -256,6 +256,7 @@ nav ul {
 .active {
   display: block;
 }
+
 footer .content {
   display: flex;
   justify-content: space-between;
